@@ -32,7 +32,7 @@
 /* Introduction background */
 
 #introduction .half.bg {
-    background-image: url('../images/about_01.jpg');
+    background-image: url('../images/about01.jpg');
     background-size: cover;
 }
 
@@ -40,7 +40,7 @@
 /* Services background */
 
 #services .half.bg {
-    background-image: url('../images/server_02.jpg');
+    background-image: url('../images/server02.jpg');
     background-size: cover;
 }
 
