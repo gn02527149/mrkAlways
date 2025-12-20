@@ -32,7 +32,7 @@
 /* Introduction background */
 
 #introduction .half.bg {
-    background-image: url('../images/about01.jpg');
+    background-image: url('../images/about01.png');
     background-size: cover;
 }
 
@@ -40,7 +40,7 @@
 /* Services background */
 
 #services .half.bg {
-    background-image: url('../images/server02.jpg');
+    background-image: url('../images/server02.png');
     background-size: cover;
 }
 
@@ -268,25 +268,30 @@ hr {
 
 .source {
     position: relative;
-    margin-top: 7%;
-    margin-bottom: 4%;
-    ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
 }
 
 .source .bobo {
     margin-left: 62px;
+    flex: 1;
+    word-wrap: break-word;
 }
 
 .source .icon {
     position: absolute;
     top: 0px;
     left: 0px;
+    flex-shrink: 0;
 }
 
 .efno {
-    max-width: 600px;
-    margin-top: 5%;
-    margin-left: 5%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .contact {
@@ -295,6 +300,9 @@ hr {
 
 .contact p {
     font-size: 0.9em;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .bg-icon-map {
@@ -302,27 +310,28 @@ hr {
 }
 
 .conte {
-    max-width: 302px;
-    height: 57px;
+    max-width: 280px;
+    padding: 12px 20px;
     background-color: #fff;
-    border: #1d5ba0 1px solid;
-    margin-left: 0;
+    border: #1d5ba0 2px solid;
+    border-radius: 8px;
+    margin: 0 auto 25px;
     position: relative;
-    margin-bottom: 15%;
 }
 
 .conte p {
-    font-size: 25px;
+    font-size: 22px;
     color: #1d5ba0;
     font-weight: bold;
+    margin: 0;
 }
 
 .contactme {
-    width: 150px;
     background-color: #fff;
-    position: absolute;
-    top: 30px;
-    left: 75px;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
 }
 
 .bg-ims {
@@ -706,5 +715,389 @@ a {
     }
     .navbar-nav>li>a {
         padding: 20px 6px;
+    }
+}
+
+/* ========== 新增樣式 - 文案豐富化 ========== */
+
+/* Hero 區塊標語 */
+.hero-tagline {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* 區塊副標題 */
+.section-subtitle-text {
+    color: #888;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* 關於我們 - 強調區塊 */
+.highlight-box {
+    background: rgba(74, 144, 226, 0.08);
+    border-left: 3px solid #4a90e2;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.highlight-box .textTitle {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.highlight-box .textTitle i {
+    margin-right: 5px;
+}
+
+.service-items-top {
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.service-items-top h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+
+.service-items-top .col-lg-12 {
+    margin-bottom: 25px;
+}
+
+.service-item {
+    padding: 20px 15px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(74, 144, 226, 0.15);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    background: rgba(74, 144, 226, 0.1);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+}
+
+.service-item i {
+    color: #4a90e2;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.service-item p {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* 四大服務承諾區塊 */
+.service-promise {
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+.promise-title {
+    color: #4a90e2;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.promise-title i {
+    margin-right: 8px;
+}
+
+.promise-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.serve-col-card {
+    padding: 0 12px;
+    margin-bottom: 25px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(74, 144, 226, 0.05));
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    border-radius: 12px;
+    padding: 10px;
+    height: 100%;
+    min-height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.15);
+}
+
+.service-card-icon {
+    margin-bottom: 15px;
+}
+
+.service-card-icon img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.9;
+}
+
+.service-card-title {
+    color: #4a90e2;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-card-text {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.service-card-text strong {
+    color: #4a90e2;
+}
+
+/* 聯繫我們 - 標題區塊 */
+.contact-header {
+    margin-bottom: 25px;
+}
+
+.contact-title {
+    font-size: 28px;
+    color: #1d5ba0;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #1d5ba0;
+    display: inline-block;
+}
+
+/* 聯繫我們 - 營業時間區塊 */
+.contact-hours {
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    background: rgba(29, 91, 160, 0.05) !important;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-hours h4 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.contact-hours h4 i {
+    margin-right: 8px;
+}
+
+/* 聯繫資訊連結樣式 */
+.source a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.source a:hover {
+    color: #4a90e2 !important;
+}
+
+.half:not(.bg) {
+    padding: 60px 30px 80px;
+    overflow: visible;
+}
+
+#services .content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* 聯繫我們區塊整體調整 */
+#contact .half {
+    padding: 40px 30px 50px;
+    overflow: visible;
+}
+
+#contact .half .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+#contact .content {
+    width: 100%;
+    max-width: 100%;
+}
+
+#contact .source:last-child {
+    margin-bottom: 20px;
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 991px) {
+    #services .half:not(.bg) {
+        padding: 50px 20px 70px;
+    }
+    
+    .serve-col-card {
+        width: 50%;
+    }
+    
+    .service-card {
+        padding: 20px 15px;
+        min-height: 180px;
+    }
+    
+    .service-card-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #services .half:not(.bg) {
+        padding: 40px 15px 60px;
+    }
+    
+    .hero-tagline {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .highlight-box {
+        padding: 12px 15px;
+    }
+
+    .service-item {
+        padding: 15px 10px;
+    }
+
+    .contact-hours {
+        padding: 12px !important;
+    }
+    
+    .service-items-top {
+        margin-bottom: 35px;
+    }
+    
+    .service-promise {
+        margin-top: 40px;
+        padding-top: 35px;
+    }
+    
+    .serve-col-card {
+        width: 50%;
+        padding: 0 8px;
+        margin-bottom: 15px;
+    }
+    
+    .service-card {
+        padding: 18px 12px;
+        min-height: 160px;
+    }
+    
+    .service-card-title {
+        font-size: 14px;
+    }
+    
+    .service-card-text {
+        font-size: 11px;
+    }
+    
+    .promise-title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    /* 聯繫我們響應式 */
+    #contact .half {
+        padding: 30px 15px 40px;
+    }
+    
+    .efno {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contact-title {
+        font-size: 24px;
+    }
+    
+    .source {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .source .bobo {
+        margin-left: 55px;
+    }
+    
+    .bg-icon-map {
+        max-width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #services .half:not(.bg) {
+        padding: 30px 15px 50px;
+    }
+    
+    #contact .half {
+        padding: 25px 10px 35px;
+    }
+    
+    .service-items-top {
+        padding-bottom: 25px;
+    }
+    
+    .service-promise {
+        margin-top: 25px;
+    }
+    
+    .serve-col-card {
+        width: 100%;
+        padding: 10px 5px;
+        margin-bottom: 15px;
+    }
+    
+    .service-card {
+        padding: 20px 15px;
+        min-height: 140px;
+    }
+    
+    .service-card-title {
+        font-size: 15px;
+    }
+    
+    .service-card-text {
+        font-size: 13px;
+    }
+    
+    .promise-title {
+        font-size: 17px;
+    }
+    
+    .contact-title {
+        font-size: 20px;
+    }
+    
+    .source .bobo {
+        margin-left: 50px;
     }
 }

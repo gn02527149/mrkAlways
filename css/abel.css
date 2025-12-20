@@ -330,9 +330,6 @@ body.dark #hamburger:not(.open) span {
     }
     .half>.content {
         position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
     .section>.container-fluid {
         position: fixed;
@@ -560,7 +557,7 @@ body.dark #hamburger:not(.open) span {
 
 @media only screen and (min-width: 1200px) {
     .content {
-        padding: 15px 15px;
+        padding: 20px 20px;
     }
 }
 
